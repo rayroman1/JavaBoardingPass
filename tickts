@@ -1,0 +1,26 @@
+____________________________________________________________MenuData{, ticketno=1001name='Barry, email='barr@gmail.com, phonenumber=8765778766, gender=M, age=35, date=06/18/22, destination='Chicago IL, departuretime=12:00:00, Price=150.0, Eta=6/18/22 23:00:00____________________________________________________________MenuData{ /r/n, ticketno=1001/r/nname='Jen/r/n, email='jen@gmail.com/r/n, phonenumber=234/r/n, gender=F/r/n, age=23/r/n, date=06/18/22/r/n, destination='Houston TX/r/n, departuretime=12:00:00/r/n, Price=75.0/r/n, Eta=6/18/22 19:00:00/r/n____________________________________________________________MenuData{ 
+, ticketno=1001
+name='Ursula
+, email='urs@gamil.com
+, phonenumber=345
+, gender=F
+, age=23
+, date=06/18/22
+, destination='Chicago IL
+, departuretime=12:00:00
+, Price=112.5
+, Eta=6/18/22 23:00:00
+____________________________________________________________
+MenuData{ 
+, ticketno=1001
+name='Earl
+, email='ea@gmail.com
+, phonenumber=5675675666
+, gender=M
+, age=66
+, date=06/18/22
+, destination='Dallas TX
+, departuretime=12:00:00
+, Price=60.0
+, Eta=6/18/22 01:00:00
+____________________________________________________________
