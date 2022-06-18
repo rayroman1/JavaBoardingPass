@@ -4,6 +4,7 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
+import java.nio.file.StandardOpenOption;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.time.LocalTime;
@@ -75,7 +76,7 @@ if (cv.createticket(date, destination, departuretime, m)==true)
             ", destination='" + destination + '\'' +
             ", departuretime=" + departuretime +", ticket number="+ tickno+ ", price="+price1+", Eta is"+ getEta+
             '}';
-        Files.write(filePath, content.getBytes());
+        Files.write(filePath, content.getBytes(), StandardOpenOption.APPEND);
 
         w.writeticket(name,  email, phonenumber,  gender,  age,  date, destination,  departuretime,tickno,price1,getEta);
     }

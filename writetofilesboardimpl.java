@@ -3,6 +3,7 @@ package javaboardingproject;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
+import java.nio.file.StandardOpenOption;
 import java.util.Date;
 
 public class writetofilesboardimpl implements writetofilesboard {
@@ -21,7 +22,7 @@ public class writetofilesboardimpl implements writetofilesboard {
                 ", departuretime=" + departuretime +
                 '}';
         try {
-            Files.write(filePath, content.getBytes());
+            Files.write(filePath, content.getBytes(), StandardOpenOption.APPEND);
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
@@ -47,19 +48,19 @@ public class writetofilesboardimpl implements writetofilesboard {
 
         String content11="____________________________________________________________";
         try {
-            Files.write(filePath, content.getBytes());
-            Files.write(filePath, content9.getBytes());
-            Files.write(filePath, content1.getBytes());
-            Files.write(filePath, content2.getBytes());
-            Files.write(filePath, content3.getBytes());
-            Files.write(filePath, content4.getBytes());
-            Files.write(filePath, content5.getBytes());
-            Files.write(filePath, content6.getBytes());
-            Files.write(filePath, content7.getBytes());
-            Files.write(filePath, content8.getBytes());
-            Files.write(filePath, content10.getBytes());
-            Files.write(filePath, content12.getBytes());
-            Files.write(filePath, content11.getBytes());
+            Files.write(filePath, content.getBytes(), StandardOpenOption.APPEND);
+            Files.write(filePath, content9.getBytes(), StandardOpenOption.APPEND);
+            Files.write(filePath, content1.getBytes(), StandardOpenOption.APPEND);
+            Files.write(filePath, content2.getBytes(), StandardOpenOption.APPEND);
+            Files.write(filePath, content3.getBytes(), StandardOpenOption.APPEND);
+            Files.write(filePath, content4.getBytes(), StandardOpenOption.APPEND);
+            Files.write(filePath, content5.getBytes(), StandardOpenOption.APPEND);
+            Files.write(filePath, content6.getBytes(), StandardOpenOption.APPEND);
+            Files.write(filePath, content7.getBytes(), StandardOpenOption.APPEND);
+            Files.write(filePath, content8.getBytes(), StandardOpenOption.APPEND);
+            Files.write(filePath, content10.getBytes(), StandardOpenOption.APPEND);
+            Files.write(filePath, content12.getBytes(), StandardOpenOption.APPEND);
+            Files.write(filePath, content11.getBytes(), StandardOpenOption.APPEND);
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
