@@ -11,16 +11,15 @@ public class writetofilesboardimpl implements writetofilesboard {
     public void writetouserinfo(String name, String email,String phonenumber, char gender, int age, String date,String destination, String departuretime) {
         Path filePath = Path.of("src/main/resources/userInfo");
 
-        String content  = "MenuData{" +
-                "name='" + name + '\'' +
-                ", email='" + email + '\'' +
-                ", phonenumber=" + phonenumber +
-                ", gender=" + gender +
-                ", age=" + age +
-                ", date=" + date +
-                ", destination='" + destination + '\'' +
-                ", departuretime=" + departuretime +
-                '}';
+        String content  = "MenuData{ \r \n" +
+                "name='" + name + "\r \n" +
+                ", email='" + email + "\r\n"+
+                ", phonenumber=" + phonenumber +"\r\n"+
+                ", gender=" + gender +"\r\n"+
+                ", age=" + age +"\r\n"+
+                ", date=" + date +"\r\n"+
+                ", destination='" + destination +"\r\n"+
+                ", departuretime=" + departuretime +"\r\n";
         try {
             Files.write(filePath, content.getBytes(), StandardOpenOption.APPEND);
         } catch (IOException e) {
@@ -32,18 +31,18 @@ public class writetofilesboardimpl implements writetofilesboard {
     {
         Path filePath = Path.of("src/main/resources/tickts");
 
-        String content  = "MenuData{" ;
-        String content9=        ", ticketno=" + num ;
-        String content1=        "name='" + name;
-        String content2=         ", email='" + email ;
-                String content3=         ", phonenumber=" + phonenumber ;
-            String content4=          ", gender=" + gender ;
-            String content5=          ", age=" + age ;
-            String content6=         ", date=" + date ;
-            String content7=        ", destination='" + destination ;
-            String content8=        ", departuretime=" + departuretime ;
-        String content10=        ", Price=" + pri ;
-        String content12=        ", Eta=" + eta ;
+        String content  = "\r\n"+"MenuData{ \r\n" ;
+        String content9=        ", ticketno=" + num +"\r\n";
+        String content1=        "name='" + name+"\r\n";
+        String content2=         ", email='" + email +"\r\n";
+                String content3=         ", phonenumber=" + phonenumber +"\r\n";
+            String content4=          ", gender=" + gender+"\r\n" ;
+            String content5=          ", age=" + age+"\r\n" ;
+            String content6=         ", date=" + date +"\r\n";
+            String content7=        ", destination='" + destination+"\r\n" ;
+            String content8=        ", departuretime=" + departuretime+"\r\n" ;
+        String content10=        ", Price=" + pri +"\r\n";
+        String content12=        ", Eta=" + eta+"\r\n" ;
 
 
         String content11="____________________________________________________________";

@@ -66,7 +66,7 @@ if (cv.createticket(date, destination, departuretime, m)==true)
         int tickno= cv.generateboardingnumber();
         Path filePath = Path.of("src/main/resources/newtickt");
 
-        String content    = "MenuData{" +
+        String content    = "\r\n"+"MenuData{" +
             "name='" + name + '\'' +
             ", email='" + email + '\'' +
             ", phonenumber=" + phonenumber +
@@ -74,8 +74,7 @@ if (cv.createticket(date, destination, departuretime, m)==true)
             ", age=" + age +
             ", date=" + date +
             ", destination='" + destination + '\'' +
-            ", departuretime=" + departuretime +", ticket number="+ tickno+ ", price="+price1+", Eta is"+ getEta+
-            '}';
+            ", departuretime=" + departuretime +", ticket number="+ tickno+ ", price="+price1+", Eta is"+ getEta+"\r\n";
         Files.write(filePath, content.getBytes(), StandardOpenOption.APPEND);
 
         w.writeticket(name,  email, phonenumber,  gender,  age,  date, destination,  departuretime,tickno,price1,getEta);
