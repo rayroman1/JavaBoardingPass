@@ -1,0 +1,45 @@
+MenuData{name='kory', email='kor@gmail.com', phonenumber=567, gender=M, age=45, date=06/18/22, destination='St Louis MO', departuretime=20:00:00}MenuData{name='Barry', email='barr@gmail.com', phonenumber=8765778766, gender=M, age=35, date=06/18/22, destination='Chicago IL', departuretime=12:00:00}MenuData{  
+name='Jen 
+, email='jen@gmail.com
+, phonenumber=234
+, gender=F
+, age=23
+, date=06/18/22
+, destination='Houston TX
+, departuretime=12:00:00
+MenuData{  
+name='Ursula 
+, email='urs@gamil.com
+, phonenumber=345
+, gender=F
+, age=23
+, date=06/18/22
+, destination='Chicago IL
+, departuretime=12:00:00
+MenuData{  
+name='Earl 
+, email='ea@gmail.com
+, phonenumber=5675675666
+, gender=M
+, age=66
+, date=06/18/22
+, destination='Dallas TX
+, departuretime=12:00:00
+MenuData{  
+name='Chris 
+, email='cgr@gmail.com
+, phonenumber=7658768777
+, gender=M
+, age=35
+, date=04/30/18
+, destination='Atlanta GA
+, departuretime=10:00:00
+MenuData{  
+name='Bart 
+, email='bart@gmail.com
+, phonenumber=4564564455
+, gender=M
+, age=44
+, date=04/12/18
+, destination='St Louis MO
+, departuretime=14:00:00
